@@ -23,6 +23,7 @@ Pour avoir le rport dans la console
 Voir les pages webs des packages.
 
 Playwright : https://playwright.dev/docs/intro#installing-playwright
+
 Cucumber : https://cucumber.io/docs/cucumber/api/?lang=javascript
 
 Le seul pré-requis système est 'npm' qui est installé lors de l'installation de 'nodejs' sur Windows.
@@ -30,6 +31,7 @@ Le seul pré-requis système est 'npm' qui est installé lors de l'installation 
 ## Notes en vrac
 
 Features : "localizable"
+
 StepDefinitions
 
 PageObject implementation : 
@@ -42,13 +44,16 @@ Rapports HTML et rapports Pretty
 packages.json : 
 
 * script e2e-ci => rapport HTML
+
 * script e2e-dev => rapport pretty dans terminal
 
 ## pistes futures
 
-Utiliser TypeScript plutot que js pour éviter les erreurs de syntaxes du langage et se faire aider par un compilateur : https://www.elliotdenolf.com/blog/cucumberjs-with-typescript
+* voir pour faire une implémentation en csharp plutot que js ou ts.
 
-Comparer les runners cucumber et playright pour ne pas passer à coter des trucs puissants de playright (workers, tests en // et autres que je n'ai pas encore identifiés)
+* Utiliser TypeScript plutot que js pour éviter les erreurs de syntaxes du langage et se faire aider par un compilateur : https://www.elliotdenolf.com/blog/cucumberjs-with-typescript
+
+* Comparer les runners cucumber et playright pour ne pas passer à coter des trucs puissants de playright (workers, tests en // et autres que je n'ai pas encore identifiés)
 
 ## browser headless
 
