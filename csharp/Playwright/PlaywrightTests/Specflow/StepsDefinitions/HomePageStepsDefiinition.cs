@@ -1,4 +1,5 @@
-﻿using PlaywrightTests.Specflow.PageObjects;
+﻿using Cea.Tmma.UiTests.Core;
+using PlaywrightTests.Specflow.PageObjects;
 using TechTalk.SpecFlow;
 
 namespace PlaywrightTests.Specflow.StepsDefinitions

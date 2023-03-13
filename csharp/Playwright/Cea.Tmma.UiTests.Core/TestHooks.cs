@@ -1,17 +1,16 @@
 ﻿using BoDi;
 using Microsoft.Playwright;
-using PlaywrightTests.Specflow.PageObjects;
 using TechTalk.SpecFlow;
 
-namespace PlaywrightTests.Specflow
+namespace Cea.Tmma.UiTests.Core
 {
     [Binding]
-    internal class TestHooks 
+    public class TestHooks
     {
         [BeforeScenario]
         public async Task BeforeScenario(IObjectContainer container)
         {
-            var playwright = await Microsoft.Playwright.Playwright.CreateAsync();
+            var playwright = await Playwright.CreateAsync();
             var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
                 Headless = false,
@@ -33,18 +32,6 @@ namespace PlaywrightTests.Specflow
             await browser.CloseAsync();
             var playwright = container.Resolve<IPlaywright>();
             playwright.Dispose();
-        }
-    }
-    internal class Navigator
-    {
-        public Navigator(IPage page) {
-            Page = page;
-        }
-
-        public IPage Page;
-        public async Task Goto(PageObjectBase pageObject)
-        {
-            await pageObject.NavigateAsync();
         }
     }
 }

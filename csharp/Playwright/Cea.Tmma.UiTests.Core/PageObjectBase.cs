@@ -1,8 +1,8 @@
 ﻿using Microsoft.Playwright;
 
-namespace PlaywrightTests.Specflow.PageObjects
+namespace Cea.Tmma.UiTests.Core
 {
-    internal abstract class PageObjectBase
+    public abstract class PageObjectBase
     {
         public abstract string PagePath { get; }
 

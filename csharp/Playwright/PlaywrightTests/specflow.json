@@ -1,0 +1,7 @@
+﻿{
+  "stepAssemblies": [
+    {
+      "assembly": "Cea.Tmma.UiTests.Core"
+    }
+  ]
+}

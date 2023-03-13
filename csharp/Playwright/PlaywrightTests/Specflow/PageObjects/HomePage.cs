@@ -1,4 +1,5 @@
 ﻿using Microsoft.Playwright;
+using Cea.Tmma.UiTests.Core;
 
 namespace PlaywrightTests.Specflow.PageObjects
 {
