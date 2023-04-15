@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Inetum",
+    "classifications": [ "CEA", "Testing" ],
+    "identity": "Cea.Tmma.WebUi.Tests",
+    "name": "Template de projet pour des tests web ui pour la TMMA du CEA",
+    "shortName": "webuit",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
