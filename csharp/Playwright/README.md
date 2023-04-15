@@ -1,8 +1,36 @@
-# End to end tests avec Playwright et Specflow
+# Tests web UI avec Playwright et Specflow
 
-Temps passé sur R&D : 4h.
+## Introduction
 
-## Playwright
+Ce repository contient deux projets :
+
+* Cea.Tmma.UiTests.Core : le framework commun aux projets de tests et distribuable sous forme d'un package nuget.
+* Cea.Tmma.Application.UiTests : un template de projet de tests spécifique à la TMMA CEA. Ce template de projet est distribuable sour forme de package nuget sous le nom `Cea.Tmma.WebUi.Tests`.
+
+Cette solution technique repose sur les concepts suivants :
+1. L'instanciation d'un navigateur web, au moment de l'exécution de tests et son pilotage depuis du code C#.
+2. Le [Behavior Driven Development](https://en.wikipedia.org/wiki/Behavior-driven_development) et le langage Gherkin qui, combinés permettent d'organiser et d'exprimer des cas de tests fonctionnels en langage humain et exécutable depuis du code.
+3. Le pattern de programmation appelé [page object pattern](https://www.martinfowler.com/bliki/PageObject.html) qui rend les tests pas l'interface plus robustes aux changements et plus maintenables dans le temps. Ce pattern est par ailleur bien supporté par [Playwright](https://playwright.dev/dotnet/docs/pom).
+
+Les frameworks disponibles et choisis pour cette solution technique sont :
+1. pour Le pilote de navigateur web : [Playright](https://playwright.dev/), [vers la documentation](https://playwright.dev/dotnet/docs/writing-tests).
+2. pour le framework BDD : [Specflow](https://www.specflow.org/), [vers la documentation](https://docs.specflow.org/en/latest/)
+
+## Pré-requis et outillage
+
+Pour le support de Specflow dans Visual Studio (toute version) il est nécessaire d'installer les extensions suivantes:
+
+1. Ajouter l'extension Specflow à Visual studio 2022 : https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio2022
+2. ajouter le package pour eles nouveaux projets de tests (NUnit) : https://www.nuget.org/packages/SpecFlow/
+
+
+## Démarrer un nouveau projet de tests
+
+
+
+## Limites et remarques techniques
+
+### Playwright
 
 > Ne marche bien qu'avec NUnit et MSTest. On ne retient pas Xunit pour ce besoin.
 
@@ -12,10 +40,6 @@ https://playwright.dev/dotnet/docs/writing-tests
 
 Leur recommandation d'implémentation pour le pageobject pattern : https://playwright.dev/dotnet/docs/pom
 
-## Specflow
-
-1. Ajouter l'extension Specflow à Visual studio 2022 : https://marketplace.visualstudio.com/items?itemName=TechTalkSpecFlowTeam.SpecFlowForVisualStudio2022
-2. ajouter le package pour eles nouveaux projets de tests (NUnit) : https://www.nuget.org/packages/SpecFlow/
 
 ## Générer un rapport d'exécution
 

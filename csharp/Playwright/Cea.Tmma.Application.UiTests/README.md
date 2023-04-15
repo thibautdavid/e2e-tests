@@ -24,7 +24,7 @@ Dans un sous domaine donnée, on limitera au strict nécessaire l'utilisation de
 
 ### Features
 
-Il existe une intellisence sur les stepsDefinitons existants. Cela vous permet de retrouvé un step existant plus facilement.
+Il existe une 'intellisence' sur les stepsDefinitons existants. Cela vous permet de retrouvé un step existant plus facilement.
 
 > Il est impératif de ne pas dupliquer des steps definitions.
 
@@ -34,7 +34,7 @@ Il existe une intellisence sur les stepsDefinitons existants. Cela vous permet d
 
 ## Entretien du patrimoine de tests
 
-Il existe le risque d'avoir des stepsDefinitions non utilisé et de conserver du code mort, ce qui constituerait de la dette technique. On cherche à éviter la dette technique.
+Il existe le risque d'avoir des stepsDefinitions non utilisés et de conserver du code mort, ce qui constituerait de la dette technique. On cherche à éviter la dette technique.
 Specflow nous aide à gérer ceci en affichant dans son rapport appelé 'livingDocumentation.html' dans la section 'Analytics', tous les steps inutilisés.
 
 > Il est impératif de ne pas dupliquer des steps definitions. Vous êtes les garants de la maintenabilité.
