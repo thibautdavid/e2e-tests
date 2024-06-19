@@ -21,5 +21,10 @@ namespace PlaywrightTests.Specflow.PageObjects
         {
             await Assertions.Expect(_page.GetByTestId("todo-title")).ToContainTextAsync(item);
         }
+        
+        internal async Task AssertTodoListContains2(string item)
+        {
+            await Assertions.Expect(_page.GetByTestId("todo-title")).ToContainTextAsync(item);
+        }
     }
 }
